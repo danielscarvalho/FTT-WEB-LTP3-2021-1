@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 - FORM</title>
+</head>
+<body>
+    <H1>HTML5 - FORM</H1>
+    <p>No form podemos usar os verbos HTTP (method) POST ou GET</p>
+    <form method="GET" action="http://postman-echo.com/get">
+        <p><label for="user_id">User ID: </label><input type="number" name="user_id" id="user_id" required></p>
+        <p><label for="user_name">User name: </label><input type="text" name="user_name" id="user_name" required></p>
+        <p><label for="user_email">User email: </label><input type="email" name="user_email" id="user_email" required></p>
+        <p><label for="user_color">User color: </label><input type="color" name="user_color" id="user_color" required></p>
+        <p><label for="user_range">User range: </label><input type="range" min="-10" max="10" value="5" id="user_range" name="user_range"></p>
+        <p><label for="user_dob">User DOB: </label><input type="date" name="user_dob" id="user_dob" required></p>
+        <p><label for="user_cpf">User CPF: </label><input type="text" name="user_cpf" id="user_cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" required ></p>
+        <p><label for="user_pwd">User password: </label><input type="password" name="user_pwd" id="user_pwd" required></p>
+
+        <input name="user_ticksmarks" type="range" list="tickmarks">
+
+
+        <p><input type="submit"> <input type="reset"></p>
+    </form>
+
+
+
+    <datalist id="tickmarks">
+        <option value="0" label="0%">
+        <option value="10">
+        <option value="20">
+        <option value="30">
+        <option value="40">
+        <option value="50" label="50%">
+        <option value="60">
+        <option value="70">
+        <option value="80">
+        <option value="90">
+        <option value="100" label="100%">
+      </datalist>
+
+</body>
+<pre>
+    https://letsencrypt.org/pt-br/docs/
+    https://www.w3schools.com/html/html_forms.asp
+    https://www.tutorialspoint.com/html/index.htm
+    https://learning.postman.com/docs/developer/echo-api/
+    https://www.w3schools.com/tags/att_form_method.asp
+    https://www.w3schools.com/tags/ref_httpmethods.asp
+    https://www.w3schools.com/html/html_form_input_types.asp
+    https://www.w3schools.com/tags/att_input_pattern.asp
+    
+</pre>
+</html>
